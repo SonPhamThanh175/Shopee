@@ -1,0 +1,30 @@
+{
+  "name": "shopee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonPhamThanh175/Shopee.git"
+  },
+  "keywords": [
+    "nodejs",
+    "training"
+  ],
+  "author": "SonPham175",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SonPhamThanh175/Shopee/issues"
+  },
+  "homepage": "https://github.com/SonPhamThanh175/Shopee#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
