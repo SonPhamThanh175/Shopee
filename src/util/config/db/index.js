@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
 
 async function connect(){
+
     try {
-        await mongoose.connect('mongodb://localhost:27017/Shopee_dev',{
+        await mongoose.connect('mongodb://localhost:27017/F8_education_dev',{
             useNewUrlParser:true,
-            useUnifiedTopology:true,
-            // useCreateIndex:true,
+            useUnifiedTopology:true
         });
         console.log('Connect successfully !!!')
     } catch (error) {
@@ -13,5 +13,5 @@ async function connect(){
     }
 
 }
-module.exports = { connect }
+module.exports ={ connect }
 
