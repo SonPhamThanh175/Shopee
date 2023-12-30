@@ -11,7 +11,6 @@
 .container-main {
     display: flex;
     flex-direction: column;
-    height: auto !important;
     margin: 15px 80px; 
     max-width: 100%;
 	font-family: 'Rubik', sans-serif;
@@ -24,10 +23,6 @@
 	// min-height: 100vh;
     // // height: 100%;
     
-
-	// // background:rgba(245,245,245);
-	// color: black;
-    // height: auto !important;
 }
 .container1{
     display: flex;
@@ -62,12 +57,17 @@
     object-fit: cover;
     overflow: hidden; 
     margin-right: 5px;
-    background-color: #7b00ff;
 
+}
+.content-slide img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
 }
 .content-slide23{
     height: 250px;
-    width: 35%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     overflow: hidden; 
@@ -76,8 +76,6 @@
 .content-slide2{
     height: 50%;
     width: auto;
-    margin-bottom: 5px;
-
 }
 .content-slide3{
     height: 50%;
@@ -109,12 +107,6 @@
     align-items: center;
 	// flex-wrap: wrap;
 }
-.item{
-    background-color: #7b00ff;
-	flex: 0 0 calc(8% - 10px); /* Thiết lập chiều rộng của mỗi item */
-	margin: 5px; /* Khoảng cách giữa các item */
-	box-sizing: border-box; 
-}
 
 .divider {
     width: 100%;
@@ -140,9 +132,18 @@
 	-ms-transform: translateY(-2px);
 	transform: translateY(-2px);
 }
+
+// Image item 
 .card-img-top{
 	height: 180px;
 }
+.product-detail-image{
+	width: 100%;
+	height: 450px;
+	object-fit: cover; 
+    display: block; 
+}
+
 .app {
 	flex: 1;
 	display: flex;
@@ -152,6 +153,77 @@
 	position:absolute;
 	bottom:0;
 	width:100%;
+}
+.btn-show-more{
+	display: flex;
+	margin-top: 25px;  
+	justify-content: center;
+  	align-items: center;
+  
+}
+#viewMoreButton{
+	
+}
+.item{
+	margin-top: 16px;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	height: 60px;
+	// line-height: 380px;
+	background-color: orange;
+}
+.item-show{
+	font-size: 40px;
+	// color: #fff;
+	text-align:center ;
+	// background-color: orange;
+	height: 600px;
+}
+.voucher{
+	display: flex;
+	flex-direction: row;
+}
+.ship{
+	display: flex;
+	flex-direction: row;
+}
+.title-section{
+	color: rgb(146, 146  , 146);
+}
+.detail-voucher{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	background-color: rgb(250, 238  , 238);
+	height: min-content;
+	width: min-content;
+	width: 15% ;
+}
+.detail-voucher-price{
+	color: rgb(255, 95  , 54);
+	flex-direction: row;
+	justify-content:center;
+	font-family: 'Rubik', sans-serif;
+	width: 15% ;
+}
+.detail-ship{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+.detail-color{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	height: 30px;
+	width: 30px;
 }
 *
 {
@@ -176,6 +248,7 @@
 	// background:rgba(245,245,245);
 	color: black;
     height: auto !important;
+	background-color: rgb(146, 146  , 146) !important;
 }
 
 div
@@ -201,6 +274,7 @@ p
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	margin: 5px;
 }
 p a
 {

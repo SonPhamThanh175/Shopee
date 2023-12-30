@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="list-item-content">
+    {{!-- <div class="list-item-content">
         <div class="item">
             <h1>item1</h1>
         </div>
@@ -49,6 +49,38 @@
         <div class="item">
             <h1>item</h1>
         </div>
+    </div> --}}
+    <div class="list-item-content">
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 1</div>
+        </div>
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 2</div>
+        </div>
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 3</div>
+        </div>
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 4</div>
+        </div>
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 5</div>
+        </div>
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 6</div>
+        </div>
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 7</div>
+        </div>
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 8</div>
+        </div>
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 9</div>
+        </div>
+        <div class="col l-3 m-6 c-12">
+            <div class="item">Item 10</div>
+        </div>
     </div>
 </div>
 {{!-- Container 2 --}}
@@ -75,14 +107,16 @@
                                 <h5 class="card-title">{{this.name}}</h5>
                             </a>
                             <p class="card-text">{{this.description}}.</p>
-                            <a href="#" class="btn btn-grid">{{this.price}}</a>
+                            <a href="#" class="btn btn-grid">₫{{this.price}}</a>
                         </div>
                     </div>
                 </div>
                 {{/each}}
             </div>
         </div>
-        <button id="viewMoreButton">Xem Thêm</button>
+        <div class="btn-show-more">
+            <button id="viewMoreButton">Xem Thêm</button>
+        </div>
     </div>
 </div>
 
