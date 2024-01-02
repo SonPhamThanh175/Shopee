@@ -7,7 +7,7 @@
         </div>
         <div class="col-lg-7 col-md-8 col-12">
             <div class="item-show">
-                <h3>{{item.name}}</h3>
+                <h3>{{item.description}}</h3>
                 <div class="item-price" style="color: rgb(255, 95  , 54)">₫{{item.price}}</div>
 
                 <section class="voucher">
@@ -35,14 +35,56 @@
                         <h5>Màu Sắc</h5>
                     </div>
                     <div class="detail-color col-lg-9">
-                        <div class="option">1</div>
-                        <div class="option">2</div>
-                        <div class="option">3</div>
+                        <button class="btn-pick-color">Trắng</button>
+                        <button class="btn-pick-color">Đen</button>
+                        <button class="btn-pick-color">Nâu</button>
                     </div>
                 </section>
+                 
+                 <section class="count mt-4">
+                    <div class="title-count mt-2 col-lg-3">
+                        <h5>Số lượng</h5>
+                    </div>
+                    <div class="detail-count col-lg-3">
+                        <button class="btn decrement"> - </button>
+                        <span class="counter">1</span>
+                        <button class=" btn increment"> + </button>
+                    </div>
+                    <div class="detail-count-2 col-lg-6">sản phầm có sẵn</div>
+                </section>
+
                 
                 
             </div>
         </div>
     </div>
 </div>
+<script>
+    // Lấy thẻ span và các nút
+    var counterElement = document.querySelector('.counter');
+    var decrementButton = document.querySelector('.decrement');
+    var incrementButton = document.querySelector('.increment');
+
+    // Đặt sự kiện cho nút giảm
+    decrementButton.addEventListener('click', function() {
+        updateCounter(-1);
+    });
+
+    // Đặt sự kiện cho nút tăng
+    incrementButton.addEventListener('click', function() {
+        updateCounter(1);
+    });
+
+    // Hàm cập nhật giá trị của thẻ span
+    function updateCounter(change) {
+        var currentValue = parseInt(counterElement.innerText, 10);
+        
+        // Kiểm tra giá trị không bao giờ nhỏ hơn 1
+        if (currentValue + change >= 1) {
+            counterElement.innerText = currentValue + change;
+        }
+    }
+</script>
+
+
+
